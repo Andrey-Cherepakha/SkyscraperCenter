@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyscraperCenter.Automation", "SkyscraperCenter.Automation\SkyscraperCenter.Automation.csproj", "{31F2B6B0-AC16-4FFC-B9B1-2E077187E096}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31F2B6B0-AC16-4FFC-B9B1-2E077187E096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F2B6B0-AC16-4FFC-B9B1-2E077187E096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F2B6B0-AC16-4FFC-B9B1-2E077187E096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F2B6B0-AC16-4FFC-B9B1-2E077187E096}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7E85543-C470-4F75-8ED1-F315894B601A}
+	EndGlobalSection
+EndGlobal
