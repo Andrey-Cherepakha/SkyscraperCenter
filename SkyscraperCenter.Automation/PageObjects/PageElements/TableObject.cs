@@ -27,20 +27,11 @@ namespace SkyscraperCenter.Automation.PageObjects.PageElements
 
         public int RowCount => Search.FindElements(By.XPath(".//tbody/tr[@role='row']")).Count;
 
-        private int GetColumnIndex(string columnName)
-        {  
-            return columnNames.Select(i => i.Text.ToLowerInvariant()).ToList().IndexOf(columnName.ToLowerInvariant()) + 1;
-        }
+        private int GetColumnIndex(string columnName) => columnNames.Select(i => i.Text.ToLowerInvariant()).ToList().IndexOf(columnName.ToLowerInvariant()) + 1;
 
-        private IList<string> GetColumnValues(int index)
-        {
-            return GetElementsInTheColumn(index).Select(i => i.Text).ToList();
-        }
+        private IList<string> GetColumnValues(int index) => GetElementsInTheColumn(index).Select(i => i.Text).ToList();
 
-        private IReadOnlyCollection<IWebElement> GetElementsInTheColumn(int index)
-        {
-            return Search.FindElements(By.XPath($".//tbody/tr/td[{index}]"));
-        }
+        private IReadOnlyCollection<IWebElement> GetElementsInTheColumn(int index) => Search.FindElements(By.XPath($".//tbody/tr/td[{index}]"));
 
         private IReadOnlyCollection<IWebElement> columnNames => Search.FindElements(By.XPath(".//thead//div[@class='flex']/p"));
     }
