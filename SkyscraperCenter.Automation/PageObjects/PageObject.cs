@@ -4,8 +4,8 @@ namespace SkyscraperCenter.Automation.PageObjects
 {
     public abstract class PageObject
     {
-        protected readonly ISearchContext Search;
+        protected readonly ISearchContext Context;
 
-        protected PageObject(ISearchContext search) => Search = search;
+        protected PageObject(ISearchContext context) => Context = context;
     }
 }
